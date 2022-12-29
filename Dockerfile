@@ -38,7 +38,6 @@ RUN apt update && \
     php8.1-fpm \
     php8.1-curl \
     php8.1-intl \
-    php8.1-json \
     php8.1-dev \
     php8.1-mbstring \
     php8.1-zip \
@@ -59,7 +58,7 @@ ENV NVM_DIR /usr/local/nvm
 
 
 RUN source ~/.bashrc \
-    && nvm install 19 \
+    && nvm install 19
 
 RUN npm install -g \
     gulp \
